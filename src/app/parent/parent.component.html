@@ -1,8 +1,8 @@
-<h1>This is the parent component !</h1>
-<h2>It wants to say "Hello" to its child.</h2>
-It also wants to receive a response from its child.
+
+<h2>It wants to say "Hello" to its Friend 2.</h2>
+
 <p>
-  <b>Response from child : "{{ receivedChildMessage }}"</b>
+  <b>Response from friend 2 : "{{ receivedChildMessage }}"</b>
 </p>
-<button (click)="sendToChild('Hello Child !')">Send to Child</button>
+<button (click)="sendToChild('Hello Friend2 !')">Send to friend2</button>
 <app-child [receivedParentMessage]="messageToSendP" (messageToEmit)="getMessage($event)"></app-child>

@@ -11,7 +11,7 @@ export class ChildComponent implements OnInit {
 
   @Output() messageToEmit = new EventEmitter<string>();
 
-  messageToSendC: string = "Hello Parent !";
+  messageToSendC: string = "Hello Friend1 !";
 
 
   constructor() { }
