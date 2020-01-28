@@ -2,7 +2,7 @@
 <h2>It wants to say "Hello" to its Friend 2.</h2>
 
 <p>
-  <b>Response from friend 2 : "{{ receivedChildMessage }}"</b>
+  <b>Response from friend 2 : "{{ receivedfriend2Message }}"</b>
 </p>
-<button (click)="sendToChild('Hello Friend2 !')">Send to friend2</button>
-<app-child [receivedParentMessage]="messageToSendP" (messageToEmit)="getMessage($event)"></app-child>
+<button (click)="sendTofriend2('Hello Friend2 !')">Send to friend2</button>
+<app-child [receivedfriend1Message]="messageToSendP" (messageToEmit)="getMessage($event)"></app-child>

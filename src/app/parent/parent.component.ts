@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParentComponent implements OnInit {
 
-  receivedChildMessage: string;
+  receivedfriend2Message: string;
   messageToSendP: string = '';
 
   constructor() { }
@@ -17,14 +17,14 @@ export class ParentComponent implements OnInit {
 
 
 
-  sendToChild(message: string) {
+  sendTofriend2(message: string) {
     this.messageToSendP = message;
   }
 
 
 
   getMessage(message: string) {
-    this.receivedChildMessage = message;
+    this.receivedfriend2Message = message;
   }
 
 

@@ -7,7 +7,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
 
-  @Input() receivedParentMessage: string;
+  @Input() receivedfriend1Message: string;
 
   @Output() messageToEmit = new EventEmitter<string>();
 
@@ -19,7 +19,7 @@ export class ChildComponent implements OnInit {
   ngOnInit() {
   }
 
-  sendMessageToParent(message: string) {
+  sendMessageTofriend1(message: string) {
     this.messageToEmit.emit(message)
   }
 
